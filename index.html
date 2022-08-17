@@ -5,17 +5,20 @@
     <meta name="viewport" content="width=device-width, height=device-height,initial-scale=1.0" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <script src="js/igiveup.js"></script>
     <title>CPS</title>
   </head>
   <body>
-    <nav class="fold-out-menu">
+    <nav id="fold-out-menu" class="fold-out-menu">
       <header class="upper-menu fold-out-upper-menu">
         <div class="upper-menu__left-part">
+        <!--from here-->
         <div class="upper-menu__item">
-          <button class="btn-link">
-            <img src="img/burger_close.svg" alt="close menu" class="btn-link__img" />
+          <button onclick="close_bitch()" class="btn-link">
+            <img src="img/burger_close.svg" alt="" class="btn-link__img ">
           </button>
         </div>
+         <!--to here-->
         <div class="upper-menu__item">
           <a href="#" class="upper-menu__home-link">
             <img src="img/Group.svg" alt="home" class="logo"/></a>
@@ -34,13 +37,13 @@
       <div class="fold-out-menu__items">
         <ul class="fold-out-menu__list">
           <li class="fold-out-menu__item fold-out-menu__title">Ремонт техники</li>
-          <li class="fold-out-menu__item">Услуги и сервисы</li>
-          <li class="fold-out-menu__item">Корпоративным клиентам</li>
-          <li class="fold-out-menu__item">Продавцам техники</li>
-          <li class="fold-out-menu__item">Партнёрам</li>
-          <li class="fold-out-menu__item">Производилям</li>
-          <li class="fold-out-menu__item">Наши сервисные центры</li>
-          <li class="fold-out-menu__item">Контакты</li>
+          <li class="fold-out-menu__item"><a class="fold-out-menu__link" href="">Услуги и сервисы</a></li>
+          <li class="fold-out-menu__item"><a class="fold-out-menu__link" href="">Корпоративным клиентам</a></li>
+          <li class="fold-out-menu__item"><a class="fold-out-menu__link" href="">Продавцам техники</a></li>
+          <li class="fold-out-menu__item"><a class="fold-out-menu__link" href="">Партнёрам</a></li>
+          <li class="fold-out-menu__item"><a class="fold-out-menu__link" href="">Производилям</a></li>
+          <li class="fold-out-menu__item"><a class="fold-out-menu__link" href="">Наши сервисные центры</a></li>
+          <li class="fold-out-menu__item"><a class="fold-out-menu__link" href="">Контакты</a></li>
         </ul>
       </div>
       <footer class="fold-out-menu-footer">
@@ -65,9 +68,9 @@
           <a class="mail-us" href="mailto:mail@cps.com">mail@cps.com</a><br><br>
           <a class="call-us" href="tel:88008908900">8 800 890 8900</a><br><br><br><br>
           <div class="lang">
-            <a class="lang-active" href="#">RU</span>
-            <a href="#">EN</span>
-            <a href="#">CH</span>
+            <a class="lang__link lang__link--active" href="#">RU</a>
+            <a class="lang__link" href="#">EN</a>
+            <a class="lang__link" href="#">CH</a>
         </div>
         
         </div>
@@ -78,7 +81,7 @@
       <section class="upper-menu">
         <div class="upper-menu__left-part">
           <div class="upper-menu__item menu-toggle">
-            <button class="btn-link">
+            <button onclick="open_bitch()" class="btn-link">
               <img src="img/burger.svg" alt="" class="btn-link__img" />
             </button>
             </div>
@@ -87,7 +90,8 @@
             <div class="delimeter"></div>
           </div>
           <div class="upper-menu__item">
-              <img src="img/Group.svg" alt="logo" class="logo">
+            <a href="#" class="upper-menu__home-link">
+              <img src="img/Group.svg" alt="logo" class="logo"/></a>
           </div>
         </div>
         <div class="upper-menu__right-part">
