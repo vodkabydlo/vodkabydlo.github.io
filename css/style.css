@@ -37,10 +37,11 @@ body {
   color: #1b1c21;
   background: #f2f2f2;
   margin: 0;
+  height:100vh;
 }
 
-.container {
-  height: auto;
+.main-container {
+  height: 100%; 
   width: 100%px;
   min-width: 320px;
   max-width: 1119px;
@@ -49,7 +50,7 @@ body {
 }
 
 @media screen and (min-width: 1119px) {
-  .container {
+  .main-container {
     margin: 0 auto;
     height: auto;
   }
@@ -380,6 +381,7 @@ body {
   margin-bottom: 25px;
 }
 
+
 @media screen and (max-width: 1119px) and (min-width: 500px) {
   .slide-menu__img {
     height: 260px;
@@ -389,6 +391,83 @@ body {
     margin-bottom: 25px;
   }
 }
+.fold-out-menu {
+    background-color: #fff;
+    position: absolute;
+    width: 320px;
+    height:100%;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    /* to stop flickering of text in safari */
+    
+    /*transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+*/
+}
+.fold-out-upper-menu {
+display: flex;
+justify-content: flex-start;
+}
+.fold-out-menu__items {
+  margin-top:15px;
+}
+.fold-out-menu__item{
+  color: rgba(27, 28, 33, 1);
+
+  padding:16px 20px;
+  font-weight: medium;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0,2px;
+  border-left: 4px solid #fff;
+}
+.fold-out-menu__title {
+  color: #7E7E82;
+  border-left: 4px solid #41f6d7;
+}
+.fold-out-menu__content {
+  height:100%;
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.fold-out-menu-footer {
+  height:100%;
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.contact-buttons {
+  display:flex;
+  justify-content: flex-start;
+  padding-left: 16px;
+}
+.lower-menu__item {
+  padding: 0 8px;
+}
+.contacts {
+  text-align: left;
+  padding: 25px;
+  text-decoration: none;
+}
+.mail-us {
+line-height: 28px;
+font-size: 16px;
+line-height: 24px;
+text-decoration: none;
+letter-spacing: -0.2px;
+color: #1B1C21;
+}
+.call-us { 
+font-size: 24px;
+line-height: 32px;
+text-decoration: none;
+color: #1B1C21;
+font-weight: bold;
+}
 
 @media screen and (min-width: 1119px) {
   .slide-menu__img {
@@ -397,5 +476,6 @@ body {
     margin-left: 36px;
     margin-top: 25px;
     margin-bottom: 25px;
+    color: #1B1C21;
   }
 }
