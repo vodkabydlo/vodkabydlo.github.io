@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, height=device-height,initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/igiveup.js"></script>
+    <title>CPS</title>
+  </head>
+  <body>
+    <nav id="fold-out-menu" class="fold-out-menu">
+      <header class="upper-menu fold-out-upper-menu">
+        <div class="upper-menu__left-part">
+        <!--from here-->
+        <div class="upper-menu__item">
+          <button onclick="close_bitch()" class="btn-link">
+            <img src="img/burger_close.svg" alt="" class="btn-link__img ">
+          </button>
+        </div>
+         <!--to here-->
+        <div class="upper-menu__item">
+          <a href="#" class="upper-menu__home-link">
+            <img src="img/Group.svg" alt="home" class="logo"/></a>
+        </div>
+      </div>
+      <div class="upper-menu__right-part">
+        <div class="upper-menu__item">
+          <button class="btn-link">
+          <a href="#" class="upper-menu__searh-link">
+            <img src="img/search.svg" alt="search" class="btn-link__img"/></a>
+          </button>
+        </div>
+        </div>
+      </header>
+      <div class="fold-out-menu__content">
+      <div class="fold-out-menu__items">
+        <ul class="fold-out-menu__list">
+          <li class="fold-out-menu__item fold-out-menu__title">Ремонт техники</li>
+          <li class="fold-out-menu__item"><a class="fold-out-menu__link" href="">Услуги и сервисы</a></li>
+          <li class="fold-out-menu__item"><a class="fold-out-menu__link" href="">Корпоративным клиентам</a></li>
+          <li class="fold-out-menu__item"><a class="fold-out-menu__link" href="">Продавцам техники</a></li>
+          <li class="fold-out-menu__item"><a class="fold-out-menu__link" href="">Партнёрам</a></li>
+          <li class="fold-out-menu__item"><a class="fold-out-menu__link" href="">Производилям</a></li>
+          <li class="fold-out-menu__item"><a class="fold-out-menu__link" href="">Наши сервисные центры</a></li>
+          <li class="fold-out-menu__item"><a class="fold-out-menu__link" href="">Контакты</a></li>
+        </ul>
+      </div>
+      <footer class="fold-out-menu-footer">
+        <div class="contact-buttons">
+          <div class="upper-menu__item lower-menu__item">
+            <button class="btn-link">
+              <img src="img/call.svg" alt="" class="btn-link__img " />
+            </button>
+          </div>
+          <div class="upper-menu__item lower-menu__item">
+            <button class="btn-link">
+              <img src="img/chat.svg" alt="" class="btn-link__img " />
+            </button>
+          </div>
+          <div class="upper-menu__item lower-menu__item">
+            <button class="btn-link">
+              <img src="img/profile.svg" alt="" class="btn-link__img " />
+            </button>
+          </div>
+        </div>
+        <div class="contacts">
+          <a class="mail-us" href="mailto:mail@cps.com">mail@cps.com</a><br><br>
+          <a class="call-us" href="tel:88008908900">8 800 890 8900</a><br><br><br><br>
+          <div class="lang">
+            <a class="lang__link lang__link--active" href="#">RU</a>
+            <a class="lang__link" href="#">EN</a>
+            <a class="lang__link" href="#">CH</a>
+        </div>
+        
+        </div>
+      </footer>
+      </div>
+    </nav>
+    <section class="main-container"> 
+      <section class="upper-menu">
+        <div class="upper-menu__left-part">
+          <div class="upper-menu__item menu-toggle">
+            <button onclick="open_bitch()" class="btn-link">
+              <img src="img/burger.svg" alt="" class="btn-link__img" />
+            </button>
+            </div>
+          </div>
+          <div class="upper-menu__item">
+            <div class="delimeter"></div>
+          </div>
+          <div class="upper-menu__item">
+            <a href="#" class="upper-menu__home-link">
+              <img src="img/Group.svg" alt="logo" class="logo"/></a>
+          </div>
+        </div>
+        <div class="upper-menu__right-part">
+          <div class="upper-menu__item upper-menu__item--hidden">
+            <button class="btn-link">
+              <img src="img/call.svg" alt="" class="btn-link__img ">
+            </button>
+          </div>
+          <div class="upper-menu__item upper-menu__item--hidden">
+            <button class="btn-link">
+              <img src="img/chat.svg" alt="" class="btn-link__img ">
+            </button>
+          </div>
+          <div class="upper-menu__item upper-menu__item--hidden">
+            <button class="btn-link">
+              <img src="img/profile.svg" alt="" class="btn-link__img ">
+            </button>
+          </div>
+          <div class="upper-menu__item">
+            <div class="delimeter"></div>
+          </div>
+          <div class="upper-menu__item">
+            <button class="btn-link">
+              <p class="btn-link__title">Оставить заявку</p>
+              <img src="img/repair.svg" alt="" class="btn-link__img">
+            </button>
+          </div>
+          <div class="upper-menu__item">
+            <button class="btn-link">
+              <p class="btn-link__title">Статус ремонта</p>
+              <img src="img/checkstatus.svg" alt="" class="btn-link__img">
+            </button>
+          </div>
+        </div>
+      </section>
+      <div class="title__box">
+        <div class="title">
+          <h1 class="title__text">Услуги и сервисы</h1>
+        </div>
+      </div>
+      <div class="slide-menu">
+        <ul class="slide-menu__items">
+          <li class="slide-menu__item slide-menu__item--active">
+            <a class="slide-menu__anchor" href="#">Ремонтируемые устройства</a>
+          </li>
+          <li class="slide-menu__item">
+            <a class="slide-menu__anchor" href="#">Дополнительные услуги</a>
+          </li>
+          <li class="slide-menu__item">
+            <a class="slide-menu__anchor" href="#">Цены на услуги</a>
+          </li>
+          <li class="slide-menu__item">
+            <a class="slide-menu__anchor" href="#">Адерса сервисных центров</a>
+          </li>
+          <li class="slide-menu__item">
+            <a class="slide-menu__anchor" href="#">Специальные цены</a>
+          </li>
+          <li class="slide-menu__item">
+            <a class="slide-menu__anchor" href="#">Взносы</a>
+          </li>
+        </ul>
+        <div class="slide-menu__content">
+          <div class="slide-menu__description">
+            <p class="slide-menu__text">
+              Мы являемся авторизованным сервисным центром по ремонту техники
+              Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
+              официальной гарантией производителя
+              <span class="slide-menu__text--md">
+                <br /><br />
+                Мы успешно работаем с 1992 года и заслужили репутацию надежного
+                партнера</span
+              ><span class="slide-menu__text--lg"
+                >, что подтверждает большое количество постоянных клиентов. Мы
+                гордимся тем, что к нам обращаются по рекомендациям и, в свою
+                очередь, советуют нас родным и близким.</span
+              >
+            </p>
+            <button class="slide-menu__more-btn">Читать далее</button>
+          </div>
+          <img src="img/repair.png" alt="Вывеска при входе"
+          class="slide-menu__img">
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
